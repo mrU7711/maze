@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="config_name" default="simple_robot"/>
+    <arg name="map_name" default="my_world"/>
+
+    <!-- Launch Stage with the specified world -->
+    <node pkg="stage_ros" type="stageros" name="stage_ros" args="$(find simstage_group8)/worlds/$(arg map_name).world"/>
+
+    <!-- Launch your reactive navigation script -->
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+        <rosparam file="$(find simstage_group8)/config/$(arg config_name).yaml" command="load"/>
+
+
+</launch>

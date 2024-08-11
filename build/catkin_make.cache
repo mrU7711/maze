@@ -1,0 +1,2 @@
+simstage_group8
+-DCATKIN_DEVEL_PREFIX=/home/mru/task_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mru/task_ws/install -G Unix Makefiles

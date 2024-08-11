@@ -1,0 +1,8 @@
+prefix=/home/mru/task_ws/install
+
+Name: simstage_group8
+Description: Description of simstage_group8
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
