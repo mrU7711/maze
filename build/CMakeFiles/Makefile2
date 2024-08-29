@@ -54,13 +54,21 @@ CMAKE_BINARY_DIR = /home/mru/task_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: robotcraft2024_driver_g8/all
+all: robotcraft_maze/all
 all: simstage_group8/all
+all: robotcraft_robot_description/all
+all: ydlidar/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: robotcraft2024_driver_g8/preinstall
+preinstall: robotcraft_maze/preinstall
 preinstall: simstage_group8/preinstall
+preinstall: robotcraft_robot_description/preinstall
+preinstall: ydlidar/preinstall
 
 .PHONY : preinstall
 
@@ -71,7 +79,11 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: robotcraft2024_driver_g8/clean
+clean: robotcraft_maze/clean
 clean: simstage_group8/clean
+clean: robotcraft_robot_description/clean
+clean: ydlidar/clean
 
 .PHONY : clean
 
@@ -133,6 +145,109 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
+# Directory level rules for directory robotcraft2024_driver_g8
+
+# Recursive "all" directory target.
+robotcraft2024_driver_g8/all:
+
+.PHONY : robotcraft2024_driver_g8/all
+
+# Recursive "preinstall" directory target.
+robotcraft2024_driver_g8/preinstall:
+
+.PHONY : robotcraft2024_driver_g8/preinstall
+
+# Recursive "clean" directory target.
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/clean: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : robotcraft2024_driver_g8/clean
+
+#=============================================================================
+# Directory level rules for directory robotcraft_maze
+
+# Recursive "all" directory target.
+robotcraft_maze/all:
+
+.PHONY : robotcraft_maze/all
+
+# Recursive "preinstall" directory target.
+robotcraft_maze/preinstall:
+
+.PHONY : robotcraft_maze/preinstall
+
+# Recursive "clean" directory target.
+robotcraft_maze/clean:
+
+.PHONY : robotcraft_maze/clean
+
+#=============================================================================
+# Directory level rules for directory robotcraft_robot_description
+
+# Recursive "all" directory target.
+robotcraft_robot_description/all: robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/all
+
+.PHONY : robotcraft_robot_description/all
+
+# Recursive "preinstall" directory target.
+robotcraft_robot_description/preinstall:
+
+.PHONY : robotcraft_robot_description/preinstall
+
+# Recursive "clean" directory target.
+robotcraft_robot_description/clean: robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/clean
+
+.PHONY : robotcraft_robot_description/clean
+
+#=============================================================================
 # Directory level rules for directory simstage_group8
 
 # Recursive "all" directory target.
@@ -146,43 +261,29 @@ simstage_group8/preinstall:
 .PHONY : simstage_group8/preinstall
 
 # Recursive "clean" directory target.
-simstage_group8/clean: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-simstage_group8/clean: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+simstage_group8/clean:
 
 .PHONY : simstage_group8/clean
+
+#=============================================================================
+# Directory level rules for directory ydlidar
+
+# Recursive "all" directory target.
+ydlidar/all: ydlidar/CMakeFiles/ydlidar_client.dir/all
+ydlidar/all: ydlidar/CMakeFiles/ydlidar_node.dir/all
+
+.PHONY : ydlidar/all
+
+# Recursive "preinstall" directory target.
+ydlidar/preinstall:
+
+.PHONY : ydlidar/preinstall
+
+# Recursive "clean" directory target.
+ydlidar/clean: ydlidar/CMakeFiles/ydlidar_client.dir/clean
+ydlidar/clean: ydlidar/CMakeFiles/ydlidar_node.dir/clean
+
+.PHONY : ydlidar/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -429,949 +530,1435 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_nodejs"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+tf2_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_lisp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_nodejs"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_nodejs"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_lisp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+sensor_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target nav_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+nav_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : nav_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_eus: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+sensor_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/build
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sensor_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 .PHONY : sensor_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target nav_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_py: simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+nav_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 .PHONY : nav_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_eus"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+actionlib_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : actionlib_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 .PHONY : std_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+tf_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+tf2_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_eus"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_py"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+tf2_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_lisp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+actionlib_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_eus: simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+geometry_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 .PHONY : geometry_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target nav_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_eus: simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+nav_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 .PHONY : nav_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+actionlib_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : actionlib_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_py"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+actionlib_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_nodejs"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : actionlib_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target nav_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+nav_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : nav_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_eus: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+actionlib_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 
 .PHONY : actionlib_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_eus"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+tf2_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/all
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_py"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/rule
+tf_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/tf_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target nav_msgs_generate_messages_cpp"
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_cpp: simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+nav_msgs_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : nav_msgs_generate_messages_cpp
 
 # clean rule for target.
-simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
-.PHONY : simstage_group8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_py"
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_cpp"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_py: simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+actionlib_generate_messages_cpp: robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# clean rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_py"
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
 .PHONY : actionlib_msgs_generate_messages_py
 
 # clean rule for target.
-simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-.PHONY : simstage_group8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : simstage_group8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robotcraft2024_driver_g8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir
+
+# All Build rule for target.
+robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/all:
+	$(MAKE) -f robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/build.make robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/depend
+	$(MAKE) -f robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/build.make robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num= "Built target robotcraft_robot_description_xacro_generated_to_devel_space_"
+.PHONY : robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/all
+
+# Build rule for subdir invocation for target.
+robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/rule
+
+# Convenience name for target.
+robotcraft_robot_description_xacro_generated_to_devel_space_: robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/rule
+
+.PHONY : robotcraft_robot_description_xacro_generated_to_devel_space_
+
+# clean rule for target.
+robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/clean:
+	$(MAKE) -f robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/build.make robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/clean
+.PHONY : robotcraft_robot_description/CMakeFiles/robotcraft_robot_description_xacro_generated_to_devel_space_.dir/clean
+
+#=============================================================================
+# Target rules for target ydlidar/CMakeFiles/ydlidar_client.dir
+
+# All Build rule for target.
+ydlidar/CMakeFiles/ydlidar_client.dir/all:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_client.dir/build.make ydlidar/CMakeFiles/ydlidar_client.dir/depend
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_client.dir/build.make ydlidar/CMakeFiles/ydlidar_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num=9,10 "Built target ydlidar_client"
+.PHONY : ydlidar/CMakeFiles/ydlidar_client.dir/all
+
+# Build rule for subdir invocation for target.
+ydlidar/CMakeFiles/ydlidar_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ydlidar/CMakeFiles/ydlidar_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : ydlidar/CMakeFiles/ydlidar_client.dir/rule
+
+# Convenience name for target.
+ydlidar_client: ydlidar/CMakeFiles/ydlidar_client.dir/rule
+
+.PHONY : ydlidar_client
+
+# clean rule for target.
+ydlidar/CMakeFiles/ydlidar_client.dir/clean:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_client.dir/build.make ydlidar/CMakeFiles/ydlidar_client.dir/clean
+.PHONY : ydlidar/CMakeFiles/ydlidar_client.dir/clean
+
+#=============================================================================
+# Target rules for target ydlidar/CMakeFiles/ydlidar_node.dir
+
+# All Build rule for target.
+ydlidar/CMakeFiles/ydlidar_node.dir/all:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_node.dir/build.make ydlidar/CMakeFiles/ydlidar_node.dir/depend
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_node.dir/build.make ydlidar/CMakeFiles/ydlidar_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mru/task_ws/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target ydlidar_node"
+.PHONY : ydlidar/CMakeFiles/ydlidar_node.dir/all
+
+# Build rule for subdir invocation for target.
+ydlidar/CMakeFiles/ydlidar_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 ydlidar/CMakeFiles/ydlidar_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mru/task_ws/build/CMakeFiles 0
+.PHONY : ydlidar/CMakeFiles/ydlidar_node.dir/rule
+
+# Convenience name for target.
+ydlidar_node: ydlidar/CMakeFiles/ydlidar_node.dir/rule
+
+.PHONY : ydlidar_node
+
+# clean rule for target.
+ydlidar/CMakeFiles/ydlidar_node.dir/clean:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_node.dir/build.make ydlidar/CMakeFiles/ydlidar_node.dir/clean
+.PHONY : ydlidar/CMakeFiles/ydlidar_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

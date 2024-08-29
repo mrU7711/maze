@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="simple_robot">
+  <!-- Define the world link -->
+  <link name="world"/>
+
+  <!-- Define the base link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.4 0.3 0.2"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Define a joint -->
+  <joint name="base_to_link" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>
+

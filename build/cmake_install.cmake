@@ -131,7 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mru/task_ws/build/gtest/cmake_install.cmake")
+  include("/home/mru/task_ws/build/robotcraft2024_driver_g8/cmake_install.cmake")
+  include("/home/mru/task_ws/build/robotcraft_maze/cmake_install.cmake")
   include("/home/mru/task_ws/build/simstage_group8/cmake_install.cmake")
+  include("/home/mru/task_ws/build/robotcraft_robot_description/cmake_install.cmake")
+  include("/home/mru/task_ws/build/ydlidar/cmake_install.cmake")
 
 endif()
 

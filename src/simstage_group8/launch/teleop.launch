@@ -1,16 +1,24 @@
 <?xml version="1.0"?>
-
 <launch>
 
-    <arg name="config_name" default="simple_robot"/>
-    <arg name="map_name" default="my_world"/>
-
-    <!-- Launch Stage with the specified world -->
-    <node pkg="stage_ros" type="stageros" name="stage_ros" args="$(find simstage_group8)/worlds/$(arg map_name).world"/>
-
-    <!-- Launch your reactive navigation script -->
-    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
-        <rosparam file="$(find simstage_group8)/config/$(arg config_name).yaml" command="load"/>
-
+  <!-- Argument for map name -->
+  <arg name="map_name" default="my_world"/>
+  
+  <!-- Launch Stage simulation -->
+  <node pkg="stage_ros" type="stageros" name="stage_ros" args="$(find simstage_group8)/worlds/$(arg map_name).world"/>
+  
+  <!-- Launch Teleop Keyboard -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+  
+  <!-- Load the URDF Description -->
+  <param name="robot_description" textfile="$(find simstage_group8)/urdf/simple_robot.urdf"/>
+  
+  <!-- Launch the Robot State Publisher -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
+  
+  <!-- Optionally, you can also add a static_transform_publisher if needed -->
+  <!-- Example (uncomment if needed):
+  <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 base_link world"/>
+  -->
 
 </launch>

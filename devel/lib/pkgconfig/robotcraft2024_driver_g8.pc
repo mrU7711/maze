@@ -1,0 +1,8 @@
+prefix=/home/mru/task_ws/devel
+
+Name: robotcraft2024_driver_g8
+Description: Description of robotcraft2024_driver_g8
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
